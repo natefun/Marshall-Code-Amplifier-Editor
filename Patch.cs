@@ -958,8 +958,9 @@ namespace CodeEditor
         for (int index = 0; index < 40; ++index)
         {
           contents += this.m_PatchFinalValues[index].ToString();
-          if (index < 39)
-            contents += (string) (object) '|';
+         if (index < 39)
+            //contents += (string) (object) '|';
+            contents += "|";
         }
         File.WriteAllText(FileName, contents);
       }
