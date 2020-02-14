@@ -27,7 +27,7 @@ namespace CodeEditor
 
     public void print(PaintEventArgs e)
     {
-      this.m_Position.Inflate(2, 2);
+      //this.m_Position.Inflate(2, 2);
       Rectangle position = this.m_Position;
       position.Inflate(-1, -1);
       if (!this.m_Enabled)
